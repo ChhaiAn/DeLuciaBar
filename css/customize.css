@@ -12,6 +12,7 @@
 /* NAV BAR */
 * {
   font-family: Forum;
+  padding: 0;
 }
 body {
   background-color: #221014;
@@ -45,10 +46,28 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.my-parallax-1 {
+.my-parallax-drinks {
 
   min-height: 30vh;
   background-image: url("../images/delucia05.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 3rem;
+  font-family: Forum;
+  color: firebrick;
+  font-weight: 700;
+  font-size: 10em;
+  text-shadow: 1px 2px 1px white,
+                1px 2px 1px white,
+                1px 2px 1px white,
+                1px 4px 4px red;
+}
+.my-parallax-foods {
+
+  min-height: 30vh;
+  background-image: url("../images/foods.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -113,7 +132,21 @@ body {
 .my-fav {
   border: 5px solid #bf9515;
 }
-
+.my-spicy {
+  border: 5px solid firebrick;
+}
+.spicy-image {
+  width: 45px;
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
+.fav-image {
+  width: 50px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 
 
 
