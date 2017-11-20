@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+@import url('https://fonts.googleapis.com/css?family=Merienda|Tangerine|Teko|Forum');
+@font-face {
+    font-family: GrutchShaded;
+    src: url(../font/GrutchShaded.ttf);
+}
+@font-face {
+    font-family: FFF_Tusj;
+    src: url(../font/FFF_Tusj.ttf);
+}
+
+/* NAV BAR */
+* {
+  font-family: Forum;
+}
+body {
+  background-color: #221014;
+  color: white;
+}
+.my-navbar {
+  background-color: #221014;
+
+}
+.my-navbar a{
+  color: white;
+}
+
+.my-logo {
+  width: 100px;
+  height: 100px;
+}
+.my-navtoggler{
+  background-color: white;
+}
+
+/*************/
+/* PARALLAX  */
+
+.my-parallax {
+
+  min-height: 100vh;
+  background-image: url("../images/delucia06.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.my-parallax-1 {
+
+  min-height: 30vh;
+  background-image: url("../images/delucia05.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 3rem;
+  font-family: Forum;
+  color: firebrick;
+  font-weight: 700;
+  font-size: 10em;
+  text-shadow: 1px 2px 1px white,
+                1px 2px 1px white,
+                1px 2px 1px white,
+                1px 4px 4px red;
+}
+.my-heading{
+  padding-top: 10rem;
+  font-family: Forum;
+  color: firebrick;
+  font-weight: 700;
+  font-size: 15em;
+  text-shadow: 1px 2px 1px white,
+                1px 2px 1px white,
+                1px 2px 1px white,
+                1px 4px 4px red;
+}
+
+/* #firebrick Flat Button
+==================================================*/
+.my-firebrick-button {
+  position: relative;
+  vertical-align: top;
+  width: auto;
+  height: 60px;
+  padding: 10px;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgb(95, 26, 31);
+  background: #B4262B;
+  border: 0;
+  border-bottom: 2px solid rgb(95, 26, 31);
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px rgb(95, 26, 31);
+  box-shadow: inset 0 -2px rgb(95, 26, 31);
+  margin-bottom: 4em;
+}
+.my-firebrick-button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* DRINK
+==================================================*/
+.product-image {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.my-fav {
+  border: 5px solid #bf9515;
+}
+
+
+
+
+
+/*
+==================================================*/
+
+@media only screen and (max-width: 800px) {
+  .my-heading {
+    font-size: 7em;
+  }
+  .my-parallax {
+
+    min-height: 60vh;
+}
