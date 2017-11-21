@@ -19,7 +19,7 @@ body {
   color: white;
 }
 .my-navbar {
-  background-color: #221014;
+  background-color: firebrick;
 
 }
 .my-navbar a{
@@ -147,8 +147,16 @@ body {
   right: 0;
   bottom: 0;
 }
+/* FOOTER
+==================================================*/
+footer {
+  background-color: firebrick;
+}
+.social-media-icon {
+  width: 35px;
+  padding: 5px;
 
-
+}
 
 
 /*
