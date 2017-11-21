@@ -151,6 +151,7 @@ body {
 ==================================================*/
 footer {
   background-color: firebrick;
+
 }
 .social-media-icon {
   width: 35px;
@@ -164,7 +165,7 @@ footer {
 
 @media only screen and (max-width: 800px) {
   .my-heading {
-    font-size: 7em;
+    font-size: 5em;
   }
   .my-parallax {
 
