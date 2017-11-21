@@ -48,7 +48,7 @@
 </nav> <!--NAV BAR END-->
 <!-- PARALLAX -->
   <div class="my-parallax text-center">
-    <div class="my-heading ">
+    <div class="my-heading">
       <p><small>DE</small>LUCIA</span>
     </div>
   </div> <!-- PARALLAX END -->
@@ -72,7 +72,7 @@
   <!-- DRINKS -->
   <div class="container">
     <div class="row pt-5">
-      <div class="col-md-4">
+      <div class="col-md-4 mb-3">
 
         <img class="product-image" src="images/drinks/martini.jpg">
         <div class="text-center">
@@ -81,7 +81,7 @@
           <h3><strong>$9</strong></h3>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 mb-3">
         <img class="product-image" src="images/drinks/martini.jpg">
         <div class="text-center">
           <h3>Martini</h3>
@@ -89,7 +89,7 @@
           <h3><strong>$9</strong></h3>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 mb-3">
         <img class="product-image" src="images/drinks/martini.jpg">
         <div class="text-center">
           <h3>Martini</h3>
@@ -97,7 +97,7 @@
           <h3><strong>$9</strong></h3>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 mb-3">
 
         <img class="product-image" src="images/drinks/martini.jpg">
         <div class="text-center">
@@ -106,7 +106,7 @@
           <h3><strong>$9</strong></h3>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 mb-3">
         <img class="product-image" src="images/drinks/martini.jpg">
         <div class="text-center">
           <h3>Martini</h3>
@@ -114,7 +114,7 @@
           <h3><strong>$9</strong></h3>
         </div>
       </div>
-      <div class="col-md-4 my-fav text-center">
+      <div class="col-md-4 my-fav text-center mb-3">
         <img class="fav-image"src="images/fav.svg">
         <img class="product-image" src="images/drinks/martini.jpg">
         <div class="text-center">
@@ -136,7 +136,7 @@
     <!-- FOODS -->
     <div class="container">
       <div class="row pt-5">
-        <div class="col-md-4">
+        <div class="col-md-4 mb-3">
 
           <img class="product-image" src="images/foods/taco.jpg">
           <div class="text-center">
@@ -145,7 +145,7 @@
             <h3><strong>$9</strong></h3>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mb-3">
           <img class="product-image" src="images/foods/taco.jpg">
           <div class="text-center">
             <h3>Taco</h3>
@@ -161,7 +161,7 @@
             <h3><strong>$9</strong></h3>
           </div>
         </div>
-        <div class="col-md-4 my-spicy">
+        <div class="col-md-4 my-spicy mb-3">
           <img class="spicy-image"src="images/chili.svg">
           <img class="product-image" src="images/foods/taco.jpg">
           <div class="text-center">
@@ -179,7 +179,7 @@
             <h3><strong>$9</strong></h3>
           </div>
         </div>
-        <div class="col-md-4 my-fav text-center">
+        <div class="col-md-4 my-fav text-center mb-3">
           <img class="fav-image"src="images/fav.svg">
           <img class="product-image" src="images/foods/taco.jpg">
           <div class="text-center">
@@ -191,15 +191,16 @@
       </div><!--ROW-->
     </div>  <!-- FOODS -->
 <!--FOOTER -->
-<footer class="mt-5 p-3">
+<footer class="mt-5 p-1">
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-3">
         <h1>CONTACT</h1>
         <p>14123 Garfield Ave,
             Paramount, CA 90723</p>
             <p>example@example.com</p>
             <p>562-333-2222</p>
+          <div class="social-media-container">
             <a href="#"><img class="social-media-icon" src="logo/socialMedia/facebook.svg"></a>
             <a href="#"><img class="social-media-icon"
             src="logo/socialMedia/twitter.svg"></a>
@@ -207,16 +208,18 @@
             src="logo/socialMedia/insta.svg"></a>
             <a href="#"><img class="social-media-icon"
             src="logo/socialMedia/yelp.svg"></a>
-
+          </div>
       </div>
-      <div class="col-md-4 text-center">
+      <div class="col-md-3 text-center">
         <h1>OPEN HOURS</h1>
         <p>Monday-Friday</p>
         <p>11am - 11pm</p>
         <p>Monday-Friday</p>
         <p>10am - 12am</p>
       </div>
-      <div class="col-md-4"></div>
+      <div class="col-md-6">
+        <div id="map"></div>
+      </div>
     </div>
   </div>
 
@@ -226,8 +229,23 @@
 
 
 
+<script>
+  function initMap() {
+    // Create a map object and specify the DOM element for display.
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 33.904769, lng: -118.16908},
+      zoom: 18
+    });
+    var marker = new google.maps.Marker({
+     position:{lat: 33.904769, lng: -118.16908},
+     map:map
+    });
+  }
 
+</script>
 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOQHGcQCGLuN7PGhR3CI32TXpeQSCTCC4&callback=initMap"
+async defer></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>

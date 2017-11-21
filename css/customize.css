@@ -15,7 +15,7 @@
   padding: 0;
 }
 body {
-  background-color: #221014;
+  background-color: #221010;
   color: white;
 }
 .my-navbar {
@@ -131,9 +131,11 @@ body {
 
 .my-fav {
   border: 5px solid #bf9515;
+  padding: 0;
 }
 .my-spicy {
   border: 5px solid firebrick;
+  padding: 0;
 }
 .spicy-image {
   width: 45px;
@@ -158,16 +160,23 @@ footer {
   padding: 5px;
 
 }
+.social-media-container{
+  text-align: center;
+}
+#map {
+  height: 100%;
 
+}
 
 /*
 ==================================================*/
 
 @media only screen and (max-width: 800px) {
   .my-heading {
-    font-size: 5em;
+    font-size: 6em;
   }
   .my-parallax {
 
     min-height: 60vh;
+  }
 }
