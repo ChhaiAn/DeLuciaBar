@@ -6,10 +6,11 @@
 * {
   font-family: Forum;
   padding: 0;
+
 }
 body {
-  background-image: url("images/pattern.png");
-  color: white;
+  background: #b00404;
+  font-size: 18px;
 }
 .my-navbar {
   background-color: firebrick;
@@ -30,12 +31,32 @@ body {
   display: flex;
   flex-direction: column;
   position: fixed;
-  margin-top: 40vh;
-  margin-left: 5vw;
+  margin-top: 20vh;
+  margin-left: 1vw;
+  z-index: 1;
 
 }
-.my-side-nav a {
-
+.my-firebrick-side-link {
+  position: relative;
+  vertical-align: top;
+  width: auto;
+  font-size: 1.5em;
+  padding: 5px;
+  color: white;
+  text-align: center;
+  background: #B4262B;
+  border: 0;
+  border-bottom: 2px solid rgb(95, 26, 31);
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px rgb(95, 26, 31);
+  box-shadow: inset 0 -2px rgb(95, 26, 31);
+  margin: 3px 0;
+}
+.my-firebrick-side-link:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 /*************/
@@ -88,39 +109,97 @@ body {
                 1px 4px 4px red;
 }
 .my-heading{
-  padding-top: 10rem;
+  position: absolute;
+  margin-top: 10vh;
   font-family: Forum;
   color: firebrick;
   font-weight: 700;
-  font-size: 15em;
+  margin-left: 25vw;
+  font-size: 10em;
   text-shadow: 1px 2px 1px white,
                 1px 2px 1px white,
-                1px 2px 1px white,
+                1px 2px 1px red,
                 1px 4px 4px red;
 }
+/* Images
+==================================================*/
+.my-image {
+  width: 100vw;
+  height: 100vh;
+}
+/* Black-box
+==================================================*/
+.black-box {
+  background: black;
+  color: white;
+  padding: 3em;
+  z-index: 0;
 
+}
+/* white-box
+==================================================*/
+.white-box {
+  background-color: rgba(238,238,238,.61);
+  color: black;
+  padding: 3em;
+  z-index: 0;
+}
+/* small-image-icon
+==================================================*/
+.small-image-icon {
+  width: 100px;
+  height: 100px;
+}
+/* small-ribbon-icon
+==================================================*/
+.small-ribbon {
+  width: 100px;
+  height: 50px;
+}
+/* image-inside-box
+==================================================*/
+.image-inside-box{
+
+ width: 130%;
+ height: 100%;
+
+ z-index: -1;
+ position: relative;
+
+}
+.image-box{
+  padding: 0;
+  overflow: hidden;
+}
+/* #firebrick
+==================================================*/
+.firebrick {
+  color: firebrick;
+}
 /* #firebrick Flat Button
 ==================================================*/
 .my-firebrick-button {
-  position: relative;
+  position: fixed;
+  z-index: 1;
   vertical-align: top;
-  width: auto;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   padding: 10px;
   font-size: 22px;
   color: white;
   text-align: center;
   text-shadow: 0 1px 2px rgb(95, 26, 31);
   background: #B4262B;
-  border: 0;
+  border-radius: 50%;
   border-bottom: 2px solid rgb(95, 26, 31);
   cursor: pointer;
   -webkit-box-shadow: inset 0 -2px rgb(95, 26, 31);
   box-shadow: inset 0 -2px rgb(95, 26, 31);
-  margin-bottom: 4em;
+  top: 20vh;
+  right: 1vw;
 }
 .my-firebrick-button:active {
-  top: 1px;
+
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -131,8 +210,18 @@ body {
   width: 100%;
   height: auto;
 }
-
-
+/* GRID
+==================================================*/
+.grid-container {
+  display: grid;
+  max-width: 1000px;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  grid-auto-rows: 150px;
+  grid-gap: 15px;
+}
+.grid-item{
+  border: 1px solid white;
+}
 
 .my-fav {
   border: 5px solid #bf9515;
@@ -154,6 +243,26 @@ body {
   right: 0;
   bottom: 0;
 }
+/* EVENT-CONTAINER
+==================================================*/
+.event-container{
+  height: auto;
+  background: black;
+  padding: 5em;
+}
+.event-card-container{
+  color: white;
+
+  border:1px solid white;
+
+}
+.event-card-container h1 {
+  color: firebrick;
+}
+.xsmall-icon {
+  width: 35px;
+}
+
 /* FOOTER
 ==================================================*/
 footer {
