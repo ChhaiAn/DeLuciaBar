@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script
+  			  src="https://code.jquery.com/jquery-3.2.1.js"
+  			  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  			  crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/bootstrap_4/bootstrap.css">
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/customize.css">
@@ -14,13 +18,18 @@
 </head>
 <body>
 
-<nav class="nav my-side-nav">
+<nav id="side-bar" class="nav my-side-nav">
+
+  <i id="close-side-bar" class="fa fa-times-circle my-fa-link" aria-hidden="true"></i>
   <a class="my-firebrick-side-link nav-link" href="#">Active</a>
   <a class="my-firebrick-side-link nav-link " href="#">Link</a>
   <a class="my-firebrick-side-link nav-link " href="#">Link</a>
   <a class="my-firebrick-side-link nav-link " href="#">Disabled</a>
 
+
 </nav>
+<i id="hide-arrow" class="fa fa-arrow-circle-right hide-arrow fa-2x ml-4" aria-hidden="true"></i>
+
 <button type="button" class="btn my-firebrick-button">Menu</button>
 
     <div class="my-heading">
@@ -91,11 +100,10 @@
             <h1>Mon</h1>
             <p>sososofsdjfsj.lsjdflsjflksjf</p>
           </div>
-          <div class="grid-item">
+          <div class="grid-item grid-item-last">
             <h1>Mon</h1>
             <p>sososofsdjfsj.lsjdflsjflksjf</p>
           </div>
-
         </div>
       </div>
       <div class="carousel-item">
@@ -117,143 +125,50 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="container">
+<div class="container pt-5">
+  <div class="text-center insta-container">
+    <h1>HOLA!</h1>
+    <h2>hashtag #DeLuciaBar to show up on our instagram</h2>
     <div class="row pt-5">
-      <div class="col-md-4 mb-3">
-
-        <img class="product-image" src="images/drinks/martini.jpg">
-        <div class="text-center">
-          <h3>Martini</h3>
-          <p>This is a product. Give it a brief description</p>
-          <h3><strong>$9</strong></h3>
-        </div>
+      <div class="col-md-4">
+        <img class="product-image" src="images/insta1.jpg" alt="">
       </div>
-      <div class="col-md-4 mb-3">
-        <img class="product-image" src="images/drinks/martini.jpg">
-        <div class="text-center">
-          <h3>Martini</h3>
-          <p>This is a product. Give it a brief description</p>
-          <h3><strong>$9</strong></h3>
-        </div>
+      <div class="col-md-4">
+        <img class="product-image" src="images/insta2.jpg" alt="">
       </div>
-      <div class="col-md-4 mb-3">
-        <img class="product-image" src="images/drinks/martini.jpg">
-        <div class="text-center">
-          <h3>Martini</h3>
-          <p>This is a product. Give it a brief description</p>
-          <h3><strong>$9</strong></h3>
-        </div>
+      <div class="col-md-4">
+        <img class="product-image" src="images/insta3.jpg" alt="">
       </div>
-      <div class="col-md-4 mb-3">
-
-        <img class="product-image" src="images/drinks/martini.jpg">
-        <div class="text-center">
-          <h3>Martini</h3>
-          <p>This is a product. Give it a brief description</p>
-          <h3><strong>$9</strong></h3>
-        </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <img class="product-image" src="images/drinks/martini.jpg">
-        <div class="text-center">
-          <h3>Martini</h3>
-          <p>This is a product. Give it a brief description</p>
-          <h3><strong>$9</strong></h3>
-        </div>
-      </div>
-      <div class="col-md-4 my-fav text-center mb-3">
-        <img class="fav-image"src="images/fav.svg">
-        <img class="product-image" src="images/drinks/martini.jpg">
-        <div class="text-center">
-          <h3>Martini</h3>
-          <p>This is a product. Give it a brief description</p>
-          <h3><strong>$9</strong></h3>
-        </div>
-      </div>
-    </div><!--ROW-->
-  </div>  <!-- DRINKS -->
-
-<div class="pt-5"></div>
-    <!-- PARALLAX -->
-    <div class="my-parallax-foods text-center">
-      <div class="display-1">
-        <p>FOODS</p>
-      </div>
-    </div> <!-- PARALLAX END -->
-    <!-- FOODS -->
-    <div class="container">
       <div class="row pt-5">
-        <div class="col-md-4 mb-3">
-
-          <img class="product-image" src="images/foods/taco.jpg">
-          <div class="text-center">
-            <h3>Taco</h3>
-            <p>This is a product. Give it a brief description</p>
-            <h3><strong>$9</strong></h3>
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <img class="product-image" src="images/foods/taco.jpg">
-          <div class="text-center">
-            <h3>Taco</h3>
-            <p>This is a product. Give it a brief description</p>
-            <h3><strong>$9</strong></h3>
-          </div>
+        <div class="col-md-4">
+          <img class="product-image" src="images/insta1.jpg" alt="">
         </div>
         <div class="col-md-4">
-          <img class="product-image" src="images/foods/taco.jpg">
-          <div class="text-center">
-            <h3>Taco</h3>
-            <p>This is a product. Give it a brief description</p>
-            <h3><strong>$9</strong></h3>
-          </div>
-        </div>
-        <div class="col-md-4 my-spicy mb-3">
-          <img class="spicy-image"src="images/chili.svg">
-          <img class="product-image" src="images/foods/taco.jpg">
-          <div class="text-center">
-            <h3>Taco</h3>
-            <p>This is a product. Give it a brief description</p>
-            <h3><strong>$9</strong></h3>
-          </div>
+          <img class="product-image" src="images/insta2.jpg" alt="">
         </div>
         <div class="col-md-4">
+          <img class="product-image" src="images/insta3.jpg" alt="">
+        </div>
+    </div>
+  </div>
+</div>
 
-          <img class="product-image" src="images/foods/taco.jpg">
-          <div class="text-center">
-            <h3>Martini</h3>
-            <p>This is a product. Give it a brief description</p>
-            <h3><strong>$9</strong></h3>
-          </div>
-        </div>
-        <div class="col-md-4 my-fav text-center mb-3">
-          <img class="fav-image"src="images/fav.svg">
-          <img class="product-image" src="images/foods/taco.jpg">
-          <div class="text-center">
-            <h3>Martini</h3>
-            <p>This is a product. Give it a brief description</p>
-            <h3><strong>$9</strong></h3>
-          </div>
-        </div>
-      </div><!--ROW-->
-    </div>  <!-- FOODS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--FOOTER -->
 <footer class="mt-5">
-  <div class="container">
+
     <div class="row">
       <div class="col-md-3">
         <h1>CONTACT</h1>
@@ -281,7 +196,7 @@
       <div class="col-md-6 p-0">
         <div id="map"></div>
       </div>
-    </div>
+
   </div>
 
 
@@ -291,6 +206,24 @@
 
 
 <script>
+  $(document).ready(function() {
+    $('#close-side-bar').click(function(){
+        $('#side-bar').hide();
+
+    });
+    $('#hide-arrow').click(function(){
+        $('#side-bar').show();
+
+    });
+
+});
+
+
+
+
+
+
+
   function initMap() {
     // Create a map object and specify the DOM element for display.
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -307,7 +240,8 @@
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOQHGcQCGLuN7PGhR3CI32TXpeQSCTCC4&callback=initMap"
 async defer></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
 </body>
