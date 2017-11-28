@@ -5,11 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script
-  			  src="https://code.jquery.com/jquery-3.2.1.js"
-  			  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  			  crossorigin="anonymous"></script>
+			  src="https://code.jquery.com/jquery-3.2.1.js"
+			  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+			  crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/bootstrap_4/bootstrap.css">
-  <link rel="stylesheet" href="css/font-awesome.css">
+
+
+
   <link rel="stylesheet" href="css/customize.css">
 
 <script src="https://use.fontawesome.com/974e2a50bd.js"></script>
@@ -18,24 +24,27 @@
 </head>
 <body>
 
-<nav id="side-bar" class="nav my-side-nav">
+<nav class="my-side-nav">
 
-  <i id="close-side-bar" class="fa fa-times-circle my-fa-link" aria-hidden="true"></i>
-  <a class="my-firebrick-side-link nav-link" href="#">Active</a>
-  <a class="my-firebrick-side-link nav-link " href="#">Link</a>
-  <a class="my-firebrick-side-link nav-link " href="#">Link</a>
-  <a class="my-firebrick-side-link nav-link " href="#">Disabled</a>
 
+  <i id="side-bar-hide" class="fa fa-ellipsis-v fa-2x hide-side-nav" aria-hidden="true"></i>
+
+  <div class="side-bar" id="side-bar">
+    <a class="my-firebrick-side-link nav-link" href="#">Active</a>
+    <a class="my-firebrick-side-link nav-link " href="#">Link</a>
+    <a class="my-firebrick-side-link nav-link " href="#">Link</a>
+    <a class="my-firebrick-side-link nav-link " href="#">Disabled</a>
+  </div>
 
 </nav>
-<i id="hide-arrow" class="fa fa-arrow-circle-right hide-arrow fa-2x ml-4" aria-hidden="true"></i>
+
 
 <button type="button" class="btn my-firebrick-button">Menu</button>
-
+  <div class="my-parallax">
     <div class="my-heading">
       <p><small>DE</small>LUCIA</span>
     </div>
-  <img class="my-image" src="images/bar.jpg">
+  </div>
 <div class="container pt-5">
   <div class="row">
     <div class="col-md-6 text-center white-box">
@@ -71,74 +80,42 @@
   <img class="small-image-icon" src="images/party-dj.svg">
   <h1 class="firebrick display-3 text-center">Upcoming Events</h1>
   <div class="container">
-
-      <div id="carouselExampleControls" class="carousel slide" data-ride="">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="grid-container">
-          <div class="grid-item">
-            <h1>Mon</h1>
-            <p>sososofsdjfsj.lsjdflsjflksjf</p>
-          </div>
-          <div class="grid-item">
-            <h1>Mon</h1>
-            <p>sososofsdjfsj.lsjdflsjflksjf</p>
-          </div>
-          <div class="grid-item">
-            <h1>Mon</h1>
-            <p>sososofsdjfsj.lsjdflsjflksjf</p>
-          </div>
-          <div class="grid-item">
-            <h1>Mon</h1>
-            <p>sososofsdjfsj.lsjdflsjflksjf</p>
-          </div>
-          <div class="grid-item">
-            <h1>Mon</h1>
-            <p>sososofsdjfsj.lsjdflsjflksjf</p>
-          </div>
-          <div class="grid-item">
-            <h1>Mon</h1>
-            <p>sososofsdjfsj.lsjdflsjflksjf</p>
-          </div>
-          <div class="grid-item grid-item-last">
-            <h1>Mon</h1>
-            <p>sososofsdjfsj.lsjdflsjflksjf</p>
-          </div>
+    <div class="owl-carousel owl-theme">
+        <div>
+          <h1>Dec 1</h1>
+          <p>hodifoasjfjslkfjlsjf.lsjflsjlf;kjs</p>
         </div>
+        <div>
+          <h1>Dec 1</h1>
+          <img class="product-image" src="images/insta1.jpg" alt="">
+        </div>
+        <div>
+          <h1>Dec 1</h1>
+          <img class="product-image" src="images/insta1.jpg" alt="">
+        </div>
+        <div>
+          <h1>Dec 1</h1>
+          <img class="product-image" src="images/insta1.jpg" alt="">
+        </div>
+        <div>
+          <h1>Dec 1</h1>
+          <img class="product-image" src="images/insta1.jpg" alt="">
+        </div>
+        <div>
+          <h1>Dec 1</h1>
+          <img class="product-image" src="images/insta1.jpg" alt="">
+        </div>
+
+
       </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="..." alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="..." alt="Third slide">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+
   </div>
-    </div>
   </div>
 </div>
 <div class="container pt-5">
   <div class="text-center insta-container">
     <h1>HOLA!</h1>
     <h2>hashtag #DeLuciaBar to show up on our instagram</h2>
-    <div class="row pt-5">
-      <div class="col-md-4">
-        <img class="product-image" src="images/insta1.jpg" alt="">
-      </div>
-      <div class="col-md-4">
-        <img class="product-image" src="images/insta2.jpg" alt="">
-      </div>
-      <div class="col-md-4">
-        <img class="product-image" src="images/insta3.jpg" alt="">
-      </div>
       <div class="row pt-5">
         <div class="col-md-4">
           <img class="product-image" src="images/insta1.jpg" alt="">
@@ -149,11 +126,65 @@
         <div class="col-md-4">
           <img class="product-image" src="images/insta3.jpg" alt="">
         </div>
+        <div class="row pt-5">
+          <div class="col-md-4">
+            <img class="product-image" src="images/insta1.jpg" alt="">
+          </div>
+          <div class="col-md-4">
+            <img class="product-image" src="images/insta2.jpg" alt="">
+          </div>
+          <div class="col-md-4">
+            <img class="product-image" src="images/insta3.jpg" alt="">
+          </div>
+      </div>
     </div>
   </div>
 </div>
 
+<div class="container pt-5">
+  <div class="row">
+    <div class="col-md-6 black-box">
+    <form class="text-center" action="" method="post">
+      <h1 class="text-center">MAKE A RESERVATION</h1>
+        <div class="row">
 
+              <div class="col-md-6">
+                <label for="date">DATE</label><br>
+                <input id="date" type="date" name="date" min="2017-11-01">
+              </div>
+              <div class="col-md-3">
+                <label for="time">TIME</label><br>
+                <select>
+                  <option>12:00 PM</option>
+                  <option>12:00 PM</option>
+                  <option>12:00 PM</option>
+                  <option>12:00 PM</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                 <label for="party">PARTY</label><br>
+                 <select>
+                   <option>1</option>
+                   <option>2</option>
+                   <option>3</option>
+                   <option>4</option>
+                 </select>
+              </div>
+            </form>
+        </div>
+
+
+
+
+
+
+    </div>
+    <div class="col-md-6 p-0">
+        <img class="product-image" src="images/drinks/reserved.jpg">
+    </div>
+  </div>
+
+</div>
 
 
 
@@ -207,14 +238,40 @@
 
 <script>
   $(document).ready(function() {
-    $('#close-side-bar').click(function(){
-        $('#side-bar').hide();
+    var toggle = false;
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+});
+    $('#side-bar-hide').click(function(){
+      if(!toggle) {
+
+        $('#side-bar').slideDown( "slow", function() {
+          $('#side-bar').show();
+        });
+        toggle = true;
+      } else {
+        $('#side-bar').slideUp( "slow", function() {
+          $('#side-bar').hide();
+        });
+        toggle= false;
+      }
+
 
     });
-    $('#hide-arrow').click(function(){
-        $('#side-bar').show();
 
-    });
 
 });
 
@@ -244,5 +301,8 @@ async defer></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
+<!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
+<script src="owlcarousel/owl.carousel.min.js"></script>
+
 </body>
 </html>

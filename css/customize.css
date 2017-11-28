@@ -25,21 +25,20 @@ body {
   width: 100px;
   height: 100px;
 }
-.my-navtoggler{
-  background-color: white;
-}
+
 .my-side-nav {
   display: flex;
   flex-direction: column;
   position: fixed;
   margin-top: 20vh;
-  margin-left: 1vw;
-  z-index: 1;
-  background: firebrick;
+  z-index: 2;
 
 }
 .my-side-nav a {
   color: white;
+}
+.my-side-nav a:hover {
+  color: black;
 }
 .my-fa-link {
   color: white;
@@ -48,11 +47,50 @@ body {
   padding-right: 5px;
 
 }
-.hide-arrow {
+.my-fa-link:hover {
+  color:black;
+  cursor: pointer;
+}
+.hide-side-nav {
+  height: 50px;
+  width: 50px;
   position: fixed;
-  margin-top: 30vh;
-  color:white;
+  left: 2vw;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  text-align: center;
+  text-shadow: 0 1px 2px rgb(95, 26, 31);
+  background: #B4262B;
+  border-radius: 50%;
+  border-bottom: 2px solid rgb(95, 26, 31);
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px rgb(95, 26, 31);
+  box-shadow: inset 0 -2px rgb(95, 26, 31);
 
+}
+.hide-side-nav:active {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.side-bar {
+  margin-top: 3em;
+  display: none;
+  text-align: center;
+}
+.hide-side-nav:hover {
+
+  cursor: pointer;
+  color: black;
+
+
+}
+.hide-dot-container {
+  background-color: white;
+  height: 50px;
+  width: 50px;
 }
 /*.my-firebrick-side-link {
   position: relative;
@@ -86,6 +124,7 @@ body {
   min-height: 100vh;
   background-image: url("../images/delucia06.jpg");
   background-size: cover;
+
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -127,8 +166,8 @@ body {
                 1px 4px 4px red;
 }
 .my-heading{
-  position: absolute;
-  margin-top: 10vh;
+  /*position: absolute;*/
+  padding-top: 25vh;
   font-family: Forum;
   color: firebrick;
   font-weight: 700;
@@ -157,7 +196,7 @@ body {
 /* white-box
 ==================================================*/
 .white-box {
-  background-color: rgba(238,238,238,.61);
+  background-color: #e6e6e6;
   color: black;
   padding: 3em;
   z-index: 0;
@@ -222,6 +261,9 @@ body {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.my-firebrick-button:hover {
+  color: black;
+}
 /* DRINK
 ==================================================*/
 .product-image {
@@ -267,6 +309,7 @@ body {
   height: auto;
   background: black;
   padding: 5em;
+  color: white;
 }
 .event-card-container{
   color: white;
@@ -294,8 +337,9 @@ body {
 /* FOOTER
 ==================================================*/
 footer {
-  background-color: firebrick;
+  background-color: black;
   padding: 30px;
+  color: white;
 }
 .social-media-icon {
   width: 35px;
@@ -316,7 +360,13 @@ footer {
 @media only screen and (max-width: 800px) {
   .my-heading {
     font-size: 6em;
+    margin-left: .2em;
+
   }
+  .my-firebrick-button {
+    display: none;
+  }
+
   .my-parallax {
 
     min-height: 60vh;
